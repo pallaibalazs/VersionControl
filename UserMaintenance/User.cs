@@ -1,6 +1,8 @@
-﻿using System;
-namespace GYAK3_PALLAI_BALAZS.Entities
+﻿
+using System;
+namespace UserMaintenance.Entities
 {
+
     public class User
     {
         public Guid ID { get; set; } = Guid.NewGuid();
@@ -15,6 +17,8 @@ namespace GYAK3_PALLAI_BALAZS.Entities
                     LastName,
                     FirstName);
             }
+
         }
+
     }
 }
