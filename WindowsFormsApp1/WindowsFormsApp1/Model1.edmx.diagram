@@ -5,7 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="19f7b19db4d549dc841d3b5c1273d683" Name="Diagram1">
-        <EntityTypeShape EntityType="PortfolioModel.Tick" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.Tick" Width="2" PointX="0.5" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
