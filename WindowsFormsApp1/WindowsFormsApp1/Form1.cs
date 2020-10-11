@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -67,6 +68,22 @@ namespace WindowsFormsApp1
                 value += (decimal)last.Price * item.Volume;
             }
             return value;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = filter;
+            const string header = "Időszak, Nyereség";
+            StreamWriter sw = null;
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                filter = saveFileDialog1.FileName;
+                sw = new StreamWriter(filter);
+
+                sw.Close();
+            }
         }
     }
 }
