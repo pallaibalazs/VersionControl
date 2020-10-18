@@ -14,6 +14,9 @@ namespace WEEK6
 {
     public partial class Form1 : Form
     {
+        WEEK6.Entities.RateData context = new WEEK6.Entities.RateData();
+        BindingList<WEEK6.Entities.RateData> Rates = new BindingList<WEEK6.Entities.RateData>();
+
         public Form1()
         {
             InitializeComponent();
@@ -29,6 +32,8 @@ namespace WEEK6
 
             var response = mnbService.GetExchangeRates(request);
             var result = response.GetExchangeRatesResult;
+
+            dataGridView1.DataSource = Rates;
 
         }
     }
