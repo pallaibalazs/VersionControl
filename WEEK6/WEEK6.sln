@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEEK6", "WEEK6\WEEK6.csproj", "{7A11DA64-02ED-452D-9168-727E8DEF8929}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{79EC6687-DF0B-431A-979D-C3F2168CAA48}"
+	ProjectSection(SolutionItems) = preProject
+		RateData.cs = RateData.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
